@@ -9,7 +9,7 @@ export async function handleAuth() {
         return await signOut({
             redirectTo: "/login"
         })
-    }1
+    }
 
     await signIn("google", {
         redirectTo: "/dashboard"
