@@ -20,7 +20,7 @@ export default function Payments() {
             <button className="border rounded-md px-1" onClick={handleCreateStripePortal}>
                 Criar Portal de Pagamentos      
             </button>
-            <button className="border rounded-md px-1" onClick={() => createMercadoPagoCheckout({testeId: '123'})}>
+            <button className="border rounded-md px-1" onClick={() => createMercadoPagoCheckout({testeId: '123', userEmail: "teste@teste.com"})}>
                 Criar Pagamento Mercado Pago  
             </button>
         </div>
