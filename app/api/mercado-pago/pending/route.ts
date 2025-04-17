@@ -20,7 +20,7 @@ export async function GET(req: NextRequest) {
     });
 
     if (paymentData.status === "approved" || paymentData.date_approved !== null) {
-        return NextResponse.redirect(new URL(`success`, req.url)); //ao validar pagamento, redireciona para tela de sucesso
+        return NextResponse.redirect(new URL(`/success`, req.url)); //ao validar pagamento, redireciona para tela de sucesso
     }
 
     return NextResponse.redirect(new URL(`/`, req.url)); //se pagamento nao validado, redireciona para onde precisar
